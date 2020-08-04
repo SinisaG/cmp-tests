@@ -1,3 +1,3 @@
 module.exports = {
-  baseUrl: '/cmp-tests',
+  publicPath: '/cmp-tests',
 };
