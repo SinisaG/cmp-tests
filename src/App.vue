@@ -47,4 +47,9 @@ body, html {
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+#CybotCookiebotDialogBody {
+  max-width: 100% !important;
+}
+
 </style>
