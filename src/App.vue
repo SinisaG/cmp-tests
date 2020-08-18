@@ -4,6 +4,12 @@
       <router-link to="/">Home</router-link>
     </div>
     <router-view/>
+    <footer>
+      <div>
+
+          <a href="#" @click="openConsent($event)">Cookie settings</a>
+        </div>
+    </footer>
   </div>
 </template>
 
@@ -16,6 +22,13 @@ export default {
     if (redirect && redirect !== window.location.href) {
       this.$router.push(redirect);
     }
+  },
+  methods: {
+    openConsent(e) {
+      window.CookieConsent.show();
+      e.stopPropagation();
+      e.preventDefault();
+    },
   },
 };
 </script>
@@ -50,6 +63,10 @@ body, html {
 
 #CybotCookiebotDialogBody {
   max-width: 100% !important;
+}
+
+footer {
+  padding-bottom: 120px;
 }
 
 </style>
