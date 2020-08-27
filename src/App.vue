@@ -6,7 +6,6 @@
     <router-view/>
     <footer>
       <div>
-
           <a href="#" @click="openConsent($event)">Cookie settings</a>
         </div>
     </footer>
